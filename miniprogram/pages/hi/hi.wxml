@@ -1,0 +1,23 @@
+<!--pages/hi/hi.wxml-->
+<view class="body">
+  <view class="titleBox">
+    <text class="titleTop">上传带有人像的照片，智能裁剪可以防止人像被切
+割，从而获得更好的缩略图体验
+</text>
+  </view>
+  <view class="oneBox">
+    <image src="../../images/a.png" mode="scaleToFill" class="oneImg"></image>
+  </view>
+  <view class="flex-box">
+  <view class='list-item'><image src="../../images/a.png" mode="scaleToFill" class="twoImg"></image></view>
+  <view class='list-item'><image src="../../images/a.png" mode="scaleToFill" class="threeImg"></image></view>
+  <view class='list-item'><image src="../../images/a.png" mode="scaleToFill" class="fourImg"></image></view>
+</view>
+  <view class="botmBox" bindtap="doUpload">
+    <image src="../../images/b.png" class="btnImg" mode="scaleToFill"></image>
+    <text class="btnText">上传</text>
+  </view>
+   <view class="uploader-container" wx:if="{{imgUrl}}">
+      <image class="uploader-image" src="{{imgUrl}}" mode="aspectFit" bindtap="previewImg"></image>
+    </view>
+</view>
