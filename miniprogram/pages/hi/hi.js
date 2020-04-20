@@ -9,6 +9,7 @@ Page({
   // 上传图片
   doUpload: function () {
     // 选择图片
+    var _this =this;
     wx.chooseImage({
       count: 1,
       sizeType: ['compressed'],
@@ -28,11 +29,12 @@ Page({
           filePath,
           success: res => {
             console.log('[上传文件] 成功：', res)
+            
             const imgurl = res.fileID
-            this.setData({
+            _this.setData({
               imgurl
             })
-          },
+           },
           fail: e => {
             console.error('[上传文件] 失败：', e)
             wx.showToast({
