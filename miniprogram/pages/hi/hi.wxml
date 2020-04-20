@@ -6,12 +6,12 @@
 </text>
   </view>
   <view class="oneBox">
-    <image src="../../images/a.png" mode="scaleToFill" class="oneImg"></image>
+    <image src="{{imgurl}}" mode="scaleToFill" class="oneImg"></image>
   </view>
   <view class="flex-box">
-  <view class='list-item'><image src="../../images/a.png" mode="scaleToFill" class="twoImg"></image></view>
-  <view class='list-item'><image src="../../images/a.png" mode="scaleToFill" class="threeImg"></image></view>
-  <view class='list-item'><image src="../../images/a.png" mode="scaleToFill" class="fourImg"></image></view>
+  <view class='list-item'><image src="{{imgurl}}" mode="scaleToFill" class="twoImg"></image></view>
+  <view class='list-item'><image src="{{imgurl}}" mode="scaleToFill" class="threeImg"></image></view>
+  <view class='list-item'><image src="{{imgurl}}" mode="scaleToFill" class="fourImg"></image></view>
 </view>
   <view class="botmBox" bindtap="doUpload">
     <image src="../../images/b.png" class="btnImg" mode="scaleToFill"></image>
